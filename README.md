@@ -1,4 +1,4 @@
-# Minecraft格式化代码在线渲染
+# Minecraft格式化代码渲染器
 
 本项目运用了[OreUI](https://github.com/Spectrollay/OreUI)技术
 
