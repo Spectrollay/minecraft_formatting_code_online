@@ -19,6 +19,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+
 // 颜色代码映射
 const colorMap = {
     '0': '#000000', '1': '#0000AA', '2': '#00AA00', '3': '#00AAAA',
