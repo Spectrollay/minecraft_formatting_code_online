@@ -7,6 +7,6 @@
 
 使用说明: 详见项目地址
 
-项目地址: https://spectrollay.github.io/minecraft_repository_test/mcfc/
+项目地址: https://spectrollay.github.io/minecraft_formatting_code_online/
 
 本项目遵循[MIT协议](LICENSE)开放源代码
