@@ -20,6 +20,11 @@
  * SOFTWARE.
  */
 
+@font-face {
+    font-family: 'Minecraft Seven';
+    src: url("./Minecraft-Seven.otf") format('opentype');
+}
+
 .mcfc {
     font-family: "Minecraft Seven", sans-serif;
 }
