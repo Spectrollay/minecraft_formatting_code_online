@@ -1,6 +1,6 @@
 # ⭐ Minecraft 格式化代码渲染器 (Minecraft Formatting Code Renderer)
 
-[![GitHub stars](https://img.shields.io/github/stars/Spectrollay/minecraft_formatting_code_online)](https://github.com/Spectrollay/minecraft_formatting_code_online/stargazers) [![GitHub forks](https://img.shields.io/github/forks/Spectrollay/minecraft_formatting_code_online)](https://github.com/Spectrollay/minecraft_formatting_code_online/network/members) [![License](https://img.shields.io/github/license/Spectrollay/minecraft_formatting_code_online)](LICENSE) [![在线体验](https://img.shields.io/badge/在线体验-渲染器-brightgreen)](https://spectrollay.github.io/minecraft_formatting_code_online/)
+[![星标数](https://img.shields.io/github/stars/Spectrollay/minecraft_formatting_code_online?color=eac54f&style=for-the-badge&label=星标数)](https://github.com/Spectrollay/minecraft_formatting_code_online/stargazers) [![分支数](https://img.shields.io/github/forks/Spectrollay/minecraft_formatting_code_online?style=for-the-badge&label=分支数)](https://github.com/Spectrollay/minecraft_formatting_code_online/network/members) [![开源协议](https://img.shields.io/badge/开源许可-MIT-ff69b4?style=for-the-badge)](LICENSE) [![在线体验](https://img.shields.io/badge/在线体验-渲染器-brightgreen?style=for-the-badge)](https://spectrollay.github.io/minecraft_formatting_code_online/)
 
 🎉 **一个能完美再现 Minecraft § 格式化代码样式的前端渲染器！** 无论你是想在网页中展示带有 Minecraft 特色的文本，还是为你的项目增添一些像素风采，本工具都能轻松实现。
 
@@ -63,10 +63,10 @@ https://spectrollay.github.io/minecraft_formatting_code_online/
     <link rel="stylesheet" href="path/to/your/mcfc.css">
 </head>
 <body>
-    <div class="mcfc">§e这是§c一段§b示例§d文字！</div>
+<div class="mcfc">§e这是§c一段§b示例§d文字！</div>
 
-    <script src="path/to/your/mcfc.js"></script>
-    </body>
+<script src="path/to/your/mcfc.js"></script>
+</body>
 </html>
 ````
 
@@ -100,32 +100,32 @@ https://spectrollay.github.io/minecraft_formatting_code_online/
 <div id="render_output_area"></div>
 
 <script>
-function renderMyText() {
-    const inputText = document.getElementById('mc_input').value;
-    const renderArea = document.getElementById('render_output_area');
+    function renderMyText() {
+        const inputText = document.getElementById('mc_input').value;
+        const renderArea = document.getElementById('render_output_area');
 
-    // 清空之前的渲染结果
-    renderArea.innerHTML = '';
+        // 清空之前的渲染结果
+        renderArea.innerHTML = '';
 
-    if (!/\S/.test(inputText)) { // 简单检查是否为空
-        const hint = document.createElement('span');
-        hint.style.color = 'gray'; // 简单提示样式
-        hint.textContent = '请输入格式化代码后再渲染!';
-        renderArea.appendChild(hint);
-        return;
+        if (!/\S/.test(inputText)) { // 简单检查是否为空
+            const hint = document.createElement('span');
+            hint.style.color = 'gray'; // 简单提示样式
+            hint.textContent = '请输入格式化代码后再渲染!';
+            renderArea.appendChild(hint);
+            return;
+        }
+
+        // 创建一个容器用于渲染
+        const spanToRender = document.createElement('span');
+        spanToRender.className = 'mcfc'; // 必须要有这个类名，或者确保JS逻辑能找到它
+        spanToRender.dataset.rawText = inputText; // 存储原始文本（可选，但有时有用）
+        spanToRender.textContent = inputText; // 设置§代码文本
+
+        renderArea.appendChild(spanToRender);
+
+        // 调用全局渲染函数
+        renderAllMinecraftText();
     }
-
-    // 创建一个容器用于渲染
-    const spanToRender = document.createElement('span');
-    spanToRender.className = 'mcfc'; // 必须要有这个类名，或者确保JS逻辑能找到它
-    spanToRender.dataset.rawText = inputText; // 存储原始文本（可选，但有时有用）
-    spanToRender.textContent = inputText; // 设置§代码文本
-
-    renderArea.appendChild(spanToRender);
-
-    // 调用全局渲染函数
-    renderAllMinecraftText();
-}
 </script>
 ```
 
@@ -133,15 +133,12 @@ function renderMyText() {
 
 ## 🤝 参与贡献
 
-我们欢迎各种形式的贡献！无论是提交 Issue、提出新功能建议，还是直接贡献代码 (Pull Request)，都将帮助本项目变得更好。
+我们欢迎各种形式的贡献！无论是提交 Issue、提出新功能建议，还是直接贡献代码，都将帮助本项目变得更好。
 
-1.  Fork 本仓库
-2.  创建你的分支 (`git checkout -b feature/AmazingFeature`)
-3.  提交你的修改 (`git commit -m 'Add some AmazingFeature'`)
-4.  推送到分支 (`git push origin feature/AmazingFeature`)
-5.  打开一个 Pull Request
+* **发现问题或提出建议：** 通过 [**GitHub Issues**](https://github.com/Spectrollay/minecraft_formatting_code_online/issues) 详细描述你的问题或建议。
+* **贡献代码及参与开发：** 欢迎 [**Fork**](https://github.com/Spectrollay/minecraft_formatting_code_online/fork) 本仓库，进行修改后提交 Pull Request。
 
-## 📜 许可证
+## 📜 开源许可
 
 本项目基于 [MIT 协议](LICENSE) 授权。你可以自由使用、修改和分发，但务必保留原始许可声明。
 
@@ -149,4 +146,4 @@ function renderMyText() {
 
 如果你有任何问题、建议或想要交流，可以通过以下方式联系我们：
 
-[![Telegram](https://img.shields.io/badge/Telegram-%E7%BE%A4%E7%BB%84-blue)](https://t.me/Spectrollay_MCW)   [![QQ-Group](https://img.shields.io/badge/QQ-%E7%BE%A4%E7%BB%84-blue)](https://qm.qq.com/q/AqLmKLH9mM)   [![YH-Group](https://img.shields.io/badge/云湖-%E7%BE%A4%E7%BB%84-blue)](https://yhfx.jwznb.com/share?key=VyTE7W7sLwRl&ts=1684642802)
+[![Telegram](https://img.shields.io/badge/Telegram-%E7%BE%A4%E7%BB%84-blue?style=for-the-badge)](https://t.me/Spectrollay_MCW)   [![QQ-Group](https://img.shields.io/badge/QQ-%E7%BE%A4%E7%BB%84-blue?style=for-the-badge)](https://qm.qq.com/q/AqLmKLH9mM)   [![YH-Group](https://img.shields.io/badge/云湖-%E7%BE%A4%E7%BB%84-blue?style=for-the-badge)](https://yhfx.jwznb.com/share?key=VyTE7W7sLwRl&ts=1684642802)
