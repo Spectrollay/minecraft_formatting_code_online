@@ -1,10 +1,10 @@
 # ⭐ Minecraft 格式化代码渲染器 (Minecraft Formatting Code Renderer)
 
-[![星标数](https://img.shields.io/github/stars/Spectrollay/minecraft_formatting_code_online?color=eac54f&style=for-the-badge&label=星标数)](https://github.com/Spectrollay/minecraft_formatting_code_online/stargazers) [![分支数](https://img.shields.io/github/forks/Spectrollay/minecraft_formatting_code_online?style=for-the-badge&label=分支数)](https://github.com/Spectrollay/minecraft_formatting_code_online/network/members) [![开源协议](https://img.shields.io/badge/开源许可-MIT-ff69b4?style=for-the-badge)](LICENSE) [![在线体验](https://img.shields.io/badge/在线体验-渲染器-brightgreen?style=for-the-badge)](https://spectrollay.github.io/minecraft_formatting_code_online/)
+[![星标数](https://img.shields.io/github/stars/Spectrollay/minecraft_formatting_code_online?color=eac54f&style=for-the-badge&label=星标数)](https://github.com/Spectrollay/minecraft_formatting_code_online/stargazers) [![分支数](https://img.shields.io/github/forks/Spectrollay/minecraft_formatting_code_online?style=for-the-badge&label=分支数)](https://github.com/Spectrollay/minecraft_formatting_code_online/network/members) [![开源协议](https://img.shields.io/badge/开源许可-MIT-ff69b4?style=for-the-badge)](LICENSE)
 
 🎉 **一个能完美再现 Minecraft § 格式化代码样式的前端渲染器！** 无论你是想在网页中展示带有 Minecraft 特色的文本，还是为你的项目增添一些像素风采，本工具都能轻松实现。
 
-**在线体验 & 实时编辑:** [点击访问](https://spectrollay.github.io/minecraft_formatting_code_online/)
+**在线体验 & 实时编辑:** [![在线渲染器](https://img.shields.io/badge/基岩版中文译名修正项目-blue?style=for-the-badge)](https://spectrollay.github.io/minecraft_formatting_code_online/)
 
 > ⚠️ 本项目遵循 [MIT 协议](LICENSE) 开放源代码。任何修改和再发布行为都必须保留原始的著作权声明和许可声明。
 >
